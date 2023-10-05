@@ -1,8 +1,13 @@
 
 class Pokemon {
-    number;
+    id;
     name;
-    type;
+    mainType;
     types = [];
     photo;
+}
+
+class PokemonDetailed extends Pokemon {
+    height;
+    weight;
 }

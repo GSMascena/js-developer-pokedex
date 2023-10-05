@@ -6,6 +6,14 @@
     list-style: none;
 }
 
+#pokedex {
+    display: block;
+}
+
+#pokePage {
+    display: none;
+}
+
 .normal {
     background-color: #a6a877;
 }
@@ -76,10 +84,6 @@
 
 .fairy {
     background-color: #f9aec7;
-}
-
-.pokeButton {
-    text-decoration:none;
 }
 
 .pokemon {
