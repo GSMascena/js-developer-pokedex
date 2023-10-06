@@ -6,12 +6,8 @@
     list-style: none;
 }
 
-#pokedex {
+#pokedexSection {
     display: block;
-}
-
-#pokePage {
-    display: none;
 }
 
 .normal {
@@ -133,6 +129,167 @@
 .pokemon .detail img {
     max-width: 100%;
     height: 70px;
+}
+
+.returnButton {
+    width: 2rem;
+}
+
+#pokePageSection {
+    display: none;
+    height: auto;
+    min-height: 100vh;
+}
+
+#pokePage {
+    display: flex;
+    flex-direction: column;
+}
+
+#pokeHeader {
+    margin: 1rem;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#pokePage #pokeHeader .name {
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 0.5rem;
+    margin-bottom: .25rem;
+}
+
+#pokePage #pokeHeader .number {
+    color: #fff;
+    text-align: right;
+    align-self: flex-end;
+    font-size: 1.2rem;
+}
+
+#pokePage #pokeHeader .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+#pokePage #pokeHeader .types .type {
+    color: #fff;
+    padding: .5rem .75rem;
+    margin: .25rem 0;
+    margin-right: 0.5rem;
+    font-size: .800rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+#pokePage #pokeHeader img { 
+    max-width: 75%;
+    align-self: center;
+    z-index: 1;
+}
+
+#pokePage #pokeStats {
+    margin-top: -1.5rem;
+    padding: 2rem 0;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+}
+
+#pokeStatsNav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pokeStatsNav ul li {
+    margin: .4rem auto;
+    padding-bottom: 1rem;
+}
+
+#pokeStatsNav .selected {
+    color: #678fee;
+    border-bottom: #678fee solid;
+}
+
+#pokeContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#pokePage .pokeStatList {
+    padding: 0;
+    margin: 0;
+    margin-left: 0.8rem;
+    list-style: none;
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pokeStat {
+    opacity: 0.3;
+    margin-left: 1rem;
+    text-transform: capitalize;
+}
+
+.pokeStatList .pokeStat {
+    margin-left: 0.3rem;
+}
+
+.pokeStatValue {
+    grid-column: span 2;
+    text-transform: capitalize;
+}
+
+.pokeStatList .pokeStatValue {
+    margin-left: 0.3rem;
+}
+
+.pokeStatTitle {
+    font-weight: bold;
+    font-size: 1.2rem;
+    grid-column: span 3;
+    margin-left: 1rem;
+    margin: 1rem 1rem;
+}
+
+.pokeEvolutionList {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.pokeEvolutionTitle {
+    margin: 0;
+    padding: 0;
+}
+
+.pokePrevEvolution {
+    grid-column: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.pokeNextEvolution {
+    list-style-type: none;
+    grid-column: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.pokeMove {
+    font-size: 1.2rem;
+    grid-column: span 3;
+    margin-left: 1rem;
+    margin: 1rem 1rem;
+    text-transform: capitalize;
 }
 
 .pagination {

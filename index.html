@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <section id="pokedex" class="content">
+    <section id="pokedexSection" class="content">
         <h1>Pokedex</h1>
 
         <ol id="pokemonList" class="pokemons">
@@ -37,7 +37,35 @@
         </div>
     </section>
 
-    <section id="pokePage" class="content">
+    <section id="pokePageSection" class="content">
+        <a id="returnButton" type="button">
+            <img class="returnButton" src="./assets/imgs/left-arrow.png">
+        </a>
+
+        <div id="pokePage">
+            <div id="pokeHeader">
+            </div>
+            <div id="pokeStats">
+                <nav id="pokeStatsNav">
+                    <ul>
+                        <li id="aboutButton" class="selected">
+                            About
+                        </li>
+                        <li id="statsButton">
+                            Base Stats
+                        </li>
+                        <li id="evoButton">
+                            Evolution
+                        </li>
+                        <li id="movesButton">
+                            Moves
+                        </li>
+                    </ul>
+                </nav>
+                <div id="pokeContent">
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
